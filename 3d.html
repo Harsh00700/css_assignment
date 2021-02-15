@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4D-1=[3D]</title>
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+<style>
+	div {
+		border: 5px red solid;
+		width: 10em;
+		padding: 5px;
+		margin: 5px;
+	}
+</style>
+<body>
+	<nav>
+		<ul>
+			<li><a href="positioning.html" class="back">&lArr; Positioning Blocks</a></li>
+			<li><a href="insidenavbar.html" class="forward">&rArr; Inside The Nav Bar</a></li>
+		</ul>
+	</nav>
+	<h1>The Third Dimenssion [X,Y,Z]</h1>
+	<div style="z-index: 100; background-color: pink; position: absolute; top: 20px; right: 46%">
+		(1) A block can force itself to be shown over top of other
+		material by having a larger <b>z-index</b>.
+	</div>
+	<div style="z-index: -100; background-color: orange; min-height: 120px; position: absolute; top: 10px; right: 30%">
+		(2) We won't see see all of this because it will be 
+		behind the rest of the text with a 
+		<b> z-index</b> of -100. This was text (2)
+		by the way.
+	</div>
+	<div style="background-color: yellow; position: absolute; top: 95px; right: 56%">
+		(3) When there is a background color (i.e. not transparent)
+		overlapping blocks matter.
+	</div>
+	<div style="position: absolute; right: 10px;">
+		(4) Like many things in CSS, it is important to carefully
+		manage your use of <b>z-index</b> - especially when 
+		you are using multiple CSS files from multiple sources and
+		when you are using JavaScript or something like JQuery
+		to tweak your markup.
+	</div>
+</body>
+</html>

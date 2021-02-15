@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classy</title>
+</head>
+<style>
+	.gcolor {
+		color: green;
+	}
+	.rcolor {
+		color: red;
+	}
+	.morespace {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	#uppercase {
+		text-transform: uppercase;
+	}
+	.ycolor {
+		background-color: yellow;
+	}
+</style>
+<body style="font-family: josefin sans">
+	<h1>Selecting and Styling Tags</h1>
+	<p style="font-family: monospace;">
+		To avoid putting too much into the <b>style</b> attribute, we can use the class and id attributes to style a subset of the tags.
+	</p>
+	<pre>
+    An <b>id</b> tag must be unique through the document while the <b>class</b> tag can be used on many tags throughout the document.
+	</pre>
+	<div>
+	<p class="gcolor">
+		We can use the <b>class</b> <span id="uppercase">all</span> througout the <span id="uppercase">entire</span> document.
+	</p>
+	<p class="gcolor morespace">
+		It is <b id="uppercase">very cool</b> to use classes. It can be used on any tags.
+	</p>
+	<p class="rcolor">
+		A tag can have more than one class !
+	</p>
+	</div>
+	<div>
+	<p class="ycolor">
+		You can even use a hierarchical selection string to style tags.
+	</p>
+	<p class="ycolor">
+		In general it is nice to keep your HTML as clean and easily understood as possible as in this <a href="navbar.html">&rArr; Simple Navigation Bar</a> Example.
+	</p>
+	</div>
+</body>
+</html>

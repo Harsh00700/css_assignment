@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cascading</title>
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+<style>
+	#solid {
+		border-style: solid;
+		border-color: red;
+		background-color: #EAECEE;
+		border-width: 5px;
+		padding: 10px;
+		margin: 20px;
+	}
+	#dashed {
+		border-style: dashed;
+		border-color: blue;
+		background-color: #EAECEE;
+		border-width: 5px;
+		padding: 10px;
+		margin: 20px;
+	}
+</style>
+<body>
+	<nav>
+		<ul>
+			<li><a href="images.html" class="back">&lArr; Cascading Styles</a></li>
+			<li><a href="formatting.html" class="forward">&rArr; Formatting Blocks</a></li>
+		</ul>
+	</nav>
+	<h1>Putting The "Cascade" in CSS !</h1>
+	<p id="solid">
+		Order matters. The CSS rule that is "closest" to the tag wins unless a "further away" tag (i.e. border-color) marks itself as <b>!important</b>
+	</p>
+	<p style="border-style: dashed; border-color: red; background-color: #EAECEE; border-width: 5px; padding: 10px; margin: 20px;">
+		Even using the <b>style</b> attribute right on the tag fades in the face of the <b>!important</b> tag.
+	</p>
+	<p id="dashed">
+		But you can always take local control using <b>!important</b> "closer" to the tag.
+	</p>
+	<p id="solid">
+		Use <b>!important</b> sparingly. We tend to use it when we have a stylesheet provided by someone that we are using and cannot change. Sometimes it is compensating for a markup problem and it is bets to solve things without resorting to <b>!important</b> if possible.
+	</p>
+</body>
+</html>
